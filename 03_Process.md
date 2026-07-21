@@ -14,7 +14,7 @@ The original CSV file was kept unchanged as a backup, and a working copy was cre
 
 This preprocessing ensured that the dataset was clean, consistent, and ready for the Data Warehouse implementation without altering the original source data.
 
-<h3 align="center">Before Preprocessing</h3>
+<p>
 
 <p align="center">
     <img src="Images/process/dataset_year.png"
@@ -22,12 +22,18 @@ This preprocessing ensured that the dataset was clean, consistent, and ready for
          width="900">
 </p>
 
-<h3 align="center">After Preprocessing</h3>
+<p align="center">
+<i>Figure 1. Before Preprocessing.</i>
+</p>
 
 <p align="center">
     <img src="Images/process/dataset_notyear.png"
          alt="Dataset after preprocessing"
          width="900">
+</p>
+
+<p align="center">
+<i>Figure 1. After Preprocessing.</i>
 </p>
 
 ---
