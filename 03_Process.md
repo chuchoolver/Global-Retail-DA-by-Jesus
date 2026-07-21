@@ -47,7 +47,8 @@ SQL Server Management Studio (SSMS) was used to design the database, execute SQL
 <p align="center">
     <img src="Images/process/sql_server_environment.png"
          alt="SQL Server Management Studio Environment"
-         width="900">
+         width="500"
+     height="400">>
 </p>
 
 <p align="center">
@@ -67,7 +68,8 @@ This database serves as the foundation for all subsequent components, including 
 <p align="center">
     <img src="Images/process/database_creation.png"
          alt="RetailDW database created in SQL Server"
-         width="900">
+         width="500"
+     height="400">>
 </p>
 
 <p align="center">
@@ -102,7 +104,8 @@ GO
 <p align="center">
     <img src="Images/process/schema_design.png"
          alt="Database schema structure"
-         width="900">
+         width="500"
+     height="400">>
 </p>
 
 <p align="center">
@@ -142,7 +145,8 @@ CREATE TABLE stg.SuperStore (
 <p align="center">
     <img src="Images/process/staging_table.png"
          alt="Staging table in SQL Server"
-         width="900">
+         width="500"
+     height="400">>
 </p>
 
 <p align="center">
@@ -335,3 +339,41 @@ The table contains both foreign keys and quantitative measures that support anal
 - Foreign keys connect every sale to its descriptive dimensions.
 - Business measures support aggregations, KPIs, and dashboards.
 - The structure is optimized for analytical queries and reporting.
+
+---
+
+## Data Validation
+
+After loading the dimensional model, a series of validation checks were performed to verify the accuracy and consistency of the Data Warehouse.
+
+The validation process focused on ensuring that the ETL pipeline correctly transferred data from the staging layer into the dimension and fact tables without introducing missing records, duplicate entries, or broken relationships.
+
+The following validations were performed:
+
+- Record count verification between the staging and destination tables.
+- Duplicate record detection in dimension tables.
+- Primary key uniqueness verification.
+- Foreign key relationship validation.
+- Manual inspection of sample records to confirm data accuracy.
+
+<p align="center">
+    <img src="Images/process/data_validation.png"
+         alt="Data Validation Process"
+         width="900">
+</p>
+
+<p align="center">
+<i>Figure 11. Data validation performed after the ETL process.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> Data validation is a critical step in every ETL pipeline. Verifying data quality before building dashboards ensures that business decisions are based on reliable information. Even a well-designed dimensional model can produce misleading insights if the loaded data is incomplete or inconsistent.
+
+### 📌 Key Takeaways
+
+- Data consistency was verified after the ETL process.
+- Record counts were compared between staging and destination tables.
+- Duplicate and orphan records were checked.
+- Primary and foreign key integrity was validated.
+- The validated model became the trusted source for Power BI reporting.
