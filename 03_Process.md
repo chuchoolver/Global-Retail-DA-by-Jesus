@@ -378,3 +378,41 @@ The following validations were performed:
 - Duplicate and orphan records were checked.
 - Primary and foreign key integrity was validated.
 - The validated model became the trusted source for Power BI reporting.
+
+---
+
+## Performance Optimization (Indexes)
+
+To improve query performance and support efficient analytical workloads, indexes were created on the Data Warehouse tables after the data loading process.
+
+The primary keys automatically generate clustered indexes, while additional nonclustered indexes were created on frequently queried columns, particularly foreign keys and the order date. These indexes reduce lookup time, improve join performance, and optimize filtering operations used by Power BI.
+
+The implemented indexing strategy includes:
+
+- Clustered indexes on primary keys.
+- Nonclustered indexes on foreign key columns.
+- Nonclustered index on `OrderDate` to improve time-based analysis.
+
+<p align="center">
+    <img src="Images/process/indexes.png"
+         alt="Index Strategy"
+         width="500"
+     height="400">
+</p>
+</p>
+
+<p align="center">
+<i>Figure 12. Indexing strategy implemented to optimize analytical query performance.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> Data Warehouses are primarily optimized for read operations rather than transactional workloads. Creating indexes on the columns most frequently used in joins and filtering significantly reduces query execution time, improving dashboard responsiveness and the overall analytical experience.
+
+### 📌 Key Takeaways
+
+- Clustered indexes were created automatically through primary keys.
+- Nonclustered indexes optimize joins between fact and dimension tables.
+- Date indexing improves time-based filtering and trend analysis.
+- The indexing strategy enhances Power BI performance.
+- Query optimization was considered as part of the Data Warehouse design.
