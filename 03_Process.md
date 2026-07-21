@@ -316,7 +316,8 @@ The table contains both foreign keys and quantitative measures that support anal
 <p align="center">
     <img src="Images/process/fact_table.png"
          alt="Fact Table Structure"
-         width="700">
+         width="400"
+     height="500">
 </p>
 
 <p align="center">
