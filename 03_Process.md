@@ -256,3 +256,42 @@ These dimensions are linked to the central `fact.FactSales` table through surrog
 - Dimension tables provide business context for analysis.
 - Surrogate keys simplify relationships and improve performance.
 - The model is optimized for Power BI and analytical queries.
+
+---
+
+## Dimension Tables
+
+Dimension tables store descriptive business information that provides context for the numerical values contained in the fact table. Instead of storing repetitive descriptive data with every transaction, the Data Warehouse separates this information into dedicated dimensions, reducing redundancy and improving query performance.
+
+Each dimension is assigned a surrogate key that is referenced by the central fact table, allowing efficient joins while preserving a clean and scalable dimensional model.
+
+The project includes four dimension tables:
+
+| Dimension | Purpose |
+|-----------|---------|
+| **dim.DimCustomer** | Stores customer information such as customer name and market segment. |
+| **dim.DimProduct** | Contains product-related attributes including category, subcategory, and product name. |
+| **dim.DimGeography** | Stores geographic information including country, state, city, and region. |
+| **dim.DimShipMode** | Stores shipping methods used for order deliveries. |
+
+<p align="center">
+    <img src="Images/process/dimension_tables.png"
+         alt="Dimension Tables"
+         width="500"
+     height="400">
+</p>
+
+<p align="center">
+<i>Figure 9. Dimension tables implemented in the Retail Data Warehouse.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> Dimension tables provide the descriptive context required for business analysis. By isolating attributes such as customers, products, locations, and shipping methods from transactional records, the model becomes easier to maintain, reduces data duplication, and enables flexible slicing and filtering in analytical reports.
+
+### 📌 Key Takeaways
+
+- Dimension tables contain descriptive business attributes.
+- Each dimension is uniquely identified by a surrogate key.
+- Dimensions eliminate redundant descriptive data from the fact table.
+- The model enables flexible filtering and drill-down analysis in Power BI.
