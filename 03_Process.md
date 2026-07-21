@@ -295,3 +295,42 @@ The project includes four dimension tables:
 - Each dimension is uniquely identified by a surrogate key.
 - Dimensions eliminate redundant descriptive data from the fact table.
 - The model enables flexible filtering and drill-down analysis in Power BI.
+
+---
+
+## Fact Table
+
+The fact table serves as the central component of the Star Schema, storing the measurable business events that are analyzed throughout the reporting process.
+
+Each record in `fact.FactSales` represents a sales transaction and references the corresponding dimension tables through surrogate keys. This design enables efficient aggregation and filtering across multiple business perspectives, such as customer, product, geography, and shipping method.
+
+The table contains both foreign keys and quantitative measures that support analytical reporting in Power BI.
+
+| Category | Attributes |
+|----------|------------|
+| **Primary Key** | SalesKey |
+| **Foreign Keys** | CustomerKey, ProductKey, GeographyKey, ShipModeKey |
+| **Dates** | OrderDate, ShipDate |
+| **Business Measures** | Sales, Quantity, Discount, Profit, ShippingCost |
+
+<p align="center">
+    <img src="Images/process/fact_table.png"
+         alt="Fact Table Structure"
+         width="700">
+</p>
+
+<p align="center">
+<i>Figure 10. Structure of the FactSales table.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> Unlike dimension tables, which describe business entities, the fact table stores measurable business metrics. Keeping numerical values centralized allows analytical tools such as Power BI to efficiently aggregate data while leveraging the descriptive context provided by dimension tables.
+
+### 📌 Key Takeaways
+
+- The fact table is the center of the Star Schema.
+- Each record represents a business transaction.
+- Foreign keys connect every sale to its descriptive dimensions.
+- Business measures support aggregations, KPIs, and dashboards.
+- The structure is optimized for analytical queries and reporting.
