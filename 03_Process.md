@@ -235,7 +235,8 @@ These dimensions are linked to the central `fact.FactSales` table through surrog
 <p align="center">
     <img src="Images/process/star_schema.png"
          alt="Star Schema Design"
-         width="900">
+         width="500"
+     height="400">
 </p>
 
 <p align="center">
