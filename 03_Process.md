@@ -359,7 +359,8 @@ The following validations were performed:
 <p align="center">
     <img src="Images/process/data_validation.png"
          alt="Data Validation Process"
-         width="900">
+           width="400"
+     height="500">
 </p>
 
 <p align="center">
