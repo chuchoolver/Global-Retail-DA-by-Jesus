@@ -162,3 +162,54 @@ CREATE TABLE stg.SuperStore (
 - Data validation and cleansing are performed before loading the dimensional model.
 - Separating staging from analytical tables improves data quality and simplifies ETL maintenance.
 - This approach follows common Data Warehouse and ETL best practices.
+
+---
+
+## ETL Process
+
+The ETL (Extract, Transform, Load) process was implemented to transfer data from the staging layer into the dimensional model.
+
+During the **Extract** phase, the source CSV file was imported into the `stg.SuperStore` staging table, preserving the original dataset before any modifications were applied.
+
+In the **Transform** phase, the data was cleaned and prepared for analytical use. Redundant attributes were removed, data types were standardized, surrogate keys were generated for dimension tables, and the records were structured according to the Star Schema design.
+
+Finally, during the **Load** phase, the transformed data was inserted into the dimension tables followed by the `fact.FactSales` table. This loading sequence ensured referential integrity by guaranteeing that all foreign key references already existed in their corresponding dimensions.
+
+The ETL workflow produced a clean, consistent, and analytics-ready dataset that serves as the foundation for Power BI dashboards and business reporting.
+
+```sql
+INSERT INTO dim.DimCustomer (
+    CustomerID,
+    CustomerName,
+    Segment
+)
+SELECT DISTINCT
+    CustomerID,
+    CustomerName,
+    Segment
+FROM stg.SuperStore;
+```
+
+<p align="center">
+    <img src="Images/process/etl_process.png"
+         alt="ETL Process Workflow"
+         width="900">
+</p>
+
+<p align="center">
+<i>Figure 7. ETL workflow from the source dataset to the Star Schema.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> **Why separate the ETL process into Extract, Transform, and Load phases?**
+>
+> Dividing the workflow into distinct phases makes the data pipeline easier to maintain, troubleshoot, and scale. It also allows each stage to focus on a specific responsibility: extracting raw data, transforming it into a business-friendly format, and loading it into the analytical model while preserving data integrity.
+
+### 📌 Key Takeaways
+
+- Data was extracted from the source CSV into the staging layer.
+- Data cleansing and business transformations were applied before loading.
+- Dimension tables were populated before the fact table.
+- Referential integrity was maintained throughout the loading process.
+- The ETL pipeline produced a reliable dataset optimized for Business Intelligence.
