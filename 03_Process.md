@@ -73,3 +73,44 @@ This database serves as the foundation for all subsequent components, including 
 <p align="center">
 <i>Figure 4. Creation of the RetailDW database in SQL Server.</i>
 </p>
+
+---
+
+## Schema Design
+
+To improve organization and maintainability, the database was divided into separate schemas based on the role of each object within the Data Warehouse architecture.
+
+Three schemas were created:
+
+- **stg**: Stores the raw data imported from the source file before transformation.
+- **dim**: Contains dimension tables that describe business entities such as customers, products, and locations.
+- **fact**: Contains the fact table, which stores measurable business events and references the dimension tables through foreign keys.
+
+Separating objects into schemas improves readability, simplifies administration, and follows common data warehousing best practices.
+
+```sql
+CREATE SCHEMA stg;
+GO
+
+CREATE SCHEMA dim;
+GO
+
+CREATE SCHEMA fact;
+GO
+```
+
+<p align="center">
+    <img src="Images/process/schema_design.png"
+         alt="Database schema structure"
+         width="900">
+</p>
+
+<p align="center">
+<i>Figure 5. Database schemas used to organize the Data Warehouse objects.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> **Why use separate schemas instead of storing all tables under `dbo`?**
+>
+> Using dedicated schemas improves database organization by grouping objects according to their purpose. It also simplifies maintenance, enhances security management through schema-level permissions, and makes the Data Warehouse easier to scale as new objects are added. This logical separation is considered a best practice in enterprise database design.
