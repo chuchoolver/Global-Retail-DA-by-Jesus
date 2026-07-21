@@ -214,3 +214,44 @@ FROM stg.SuperStore;
 - Dimension tables were populated before the fact table.
 - Referential integrity was maintained throughout the loading process.
 - The ETL pipeline produced a reliable dataset optimized for Business Intelligence.
+
+---
+
+## Star Schema Design
+
+A Star Schema was selected as the dimensional model for this project because it provides a simple, efficient, and scalable structure for Business Intelligence workloads.
+
+The model consists of a central fact table (`fact.FactSales`) surrounded by multiple dimension tables that describe the business entities involved in each sales transaction. This design minimizes the number of joins required for analytical queries, improving performance and simplifying report development in Power BI.
+
+The implemented Star Schema includes four dimension tables:
+
+- **dim.DimCustomer**
+- **dim.DimProduct**
+- **dim.DimGeography**
+- **dim.DimShipMode**
+
+These dimensions are linked to the central `fact.FactSales` table through surrogate keys, creating a clean and optimized analytical model.
+
+<p align="center">
+    <img src="Images/process/star_schema.png"
+         alt="Star Schema Design"
+         width="900">
+</p>
+
+<p align="center">
+<i>Figure 8. Star Schema implemented for the Retail Data Warehouse.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> **Why choose a Star Schema instead of a fully normalized database?**
+>
+> Star Schemas are specifically designed for analytical workloads rather than transactional systems. By denormalizing descriptive attributes into dimension tables, analytical queries require fewer joins, execute faster, and are easier to understand. This structure is widely adopted in modern Business Intelligence and Data Warehouse solutions because it balances performance, simplicity, and scalability.
+
+### 📌 Key Takeaways
+
+- The Star Schema separates measurable data from descriptive data.
+- `fact.FactSales` is the central table containing business metrics.
+- Dimension tables provide business context for analysis.
+- Surrogate keys simplify relationships and improve performance.
+- The model is optimized for Power BI and analytical queries.
