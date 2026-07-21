@@ -114,3 +114,51 @@ GO
 > **Why use separate schemas instead of storing all tables under `dbo`?**
 >
 > Using dedicated schemas improves database organization by grouping objects according to their purpose. It also simplifies maintenance, enhances security management through schema-level permissions, and makes the Data Warehouse easier to scale as new objects are added. This logical separation is considered a best practice in enterprise database design.
+
+---
+
+## Staging Layer
+
+A staging layer was implemented to serve as the initial landing area for the raw data imported from the CSV file.
+
+The staging table preserves the original structure of the dataset, allowing the data to be validated, transformed, and cleansed before being loaded into the dimensional model. Keeping the staging layer separate from the analytical tables reduces the risk of data inconsistencies and provides a controlled environment for the ETL process.
+
+For this project, the source data was imported into the `stg.SuperStore` table, which became the starting point for all subsequent transformations.
+
+```sql
+CREATE TABLE stg.SuperStore (
+    OrderID NVARCHAR(50),
+    OrderDate DATE,
+    ShipDate DATE,
+    CustomerID NVARCHAR(50),
+    ProductID NVARCHAR(50),
+    Sales DECIMAL(10,2),
+    Quantity INT,
+    Profit DECIMAL(10,2)
+    -- Additional columns...
+);
+```
+
+<p align="center">
+    <img src="Images/process/staging_table.png"
+         alt="Staging table in SQL Server"
+         width="900">
+</p>
+
+<p align="center">
+<i>Figure 6. Staging table containing the raw data imported from the source CSV file.</i>
+</p>
+
+> **💡 Design Insight**
+>
+> **Why use a staging layer instead of loading data directly into the dimension and fact tables?**
+>
+> A staging layer isolates the raw source data from the analytical model, making the ETL process safer and easier to manage. It allows data quality checks, transformations, and validation to be performed before loading the final tables, reducing the risk of introducing inconsistent or incomplete data into the Data Warehouse.
+
+### 📌 Key Takeaways
+
+- The staging layer is the first destination for the raw source data.
+- It preserves the original dataset before any transformation is applied.
+- Data validation and cleansing are performed before loading the dimensional model.
+- Separating staging from analytical tables improves data quality and simplifies ETL maintenance.
+- This approach follows common Data Warehouse and ETL best practices.
