@@ -193,8 +193,8 @@ FROM stg.SuperStore;
 <p align="center">
     <img src="Images/process/etl_process.png"
          alt="ETL Process Workflow"
-           width="200"
-     height="300">
+           width="500"
+     height="600">
 </p>
 
 <p align="center">
