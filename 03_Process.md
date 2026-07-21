@@ -33,7 +33,7 @@ This preprocessing ensured that the dataset was clean, consistent, and ready for
 </p>
 
 <p align="center">
-<i>Figure 1. After Preprocessing.</i>
+<i>Figure 1.1 After Preprocessing.</i>
 </p>
 
 ---
