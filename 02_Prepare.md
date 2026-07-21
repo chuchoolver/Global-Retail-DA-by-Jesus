@@ -13,7 +13,7 @@ The dataset used in this project is the **SuperStore Sales Analytics Dataset**, 
 **Source:** Kaggle – SuperStore Sales Analytics
 
 <p align="center">
-    <img src="Images:\prepare:\kaggle_dataset.png" width="900">
+    <img src="Images/prepare/kaggle_dataset.png" width="900">
 </p>
 
 ---
@@ -55,7 +55,7 @@ The dataset contains transactional information that can be grouped into the foll
 The following image shows a sample of the original dataset before any transformation.
 
 <p align="center">
-    <img src="Images:\prepare:\dataset_preview.png" width="900">
+    <img src="Images/prepare/dataset_preview.png" width="900">
 </p>
 
 ---
