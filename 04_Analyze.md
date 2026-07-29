@@ -56,8 +56,8 @@ The dashboard includes:
 <p align="center">
     <img src="Images/analyze/dashboard_analyze.gif"
          alt="Executive Overview Dashboard"
-         width="500"
-     height="400">
+         width="700"
+     height="600">
 </p>
 </p>
 
