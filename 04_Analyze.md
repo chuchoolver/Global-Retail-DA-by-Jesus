@@ -54,7 +54,7 @@ The dashboard includes:
 ## Dashboard Preview
 
 <p align="center">
-    <img src="Images/analyze/dashboard_analyze3.gif"
+    <img src="Images/analyze/dashboard_analyze.gif"
          alt="Executive Overview Dashboard"
          width="500"
      height="400">
