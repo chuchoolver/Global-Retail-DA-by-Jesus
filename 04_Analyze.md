@@ -118,3 +118,29 @@ The analysis revealed several relevant patterns across sales, profitability, mar
 <p align="center">
 <i>Image 1. Dashboard - Impact of Discounts on Profit (2014). </i>
 </p>
+
+---
+
+## 💡 Business Insights
+
+The analysis highlights three main areas that could influence business performance:
+
+### 1. Profitability and Discounts
+
+High discount levels were frequently associated with negative or reduced profitability. This suggests that discount strategies should be monitored carefully to avoid sacrificing profit margins for additional sales volume.
+
+### 2. Market Performance
+
+Sales performance varied considerably across markets and regions. While APAC and the United States represented strong contributors to overall sales, several regions generated significantly lower revenue and may require targeted strategies.
+
+### 3. Product & Category Performance
+
+Technology was the strongest contributor to total profit, highlighting the importance of maintaining strong performance in high-margin categories while identifying opportunities to improve weaker product segments.
+
+---
+
+## 🎯 Outcome
+
+The analysis transformed the prepared data into measurable business insights and provided the foundation for the final Power BI dashboard.
+
+The identified trends, performance gaps, and profitability patterns were used to determine which KPIs, visualizations, and comparisons should be included in the final dashboard.
