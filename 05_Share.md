@@ -67,3 +67,25 @@ The dashboard combines several visualizations to communicate the most relevant b
 <p align="center">
 <i>Image 1. Dashboard - Business Insights slide. </i>
 </p>
+
+---
+
+## 🖱️ Interactive Features
+
+The dashboard was designed to allow users to explore the data dynamically and compare performance across different periods and business dimensions.
+
+Key interactive features include:
+
+- **Year Filter:** Updates the dashboard based on the selected year.
+- **Dynamic KPIs:** Sales, Profit, Profit Margin, and Orders update automatically according to the selected period.
+- **Year-over-Year Comparisons:** KPIs indicate whether performance increased or decreased compared with the previous year.
+- **Dynamic Titles:** Visual titles update according to the selected year.
+- **Cross-Filtering:** Selecting elements within visualizations filters related data across the dashboard.
+
+---
+
+## 💬 Communication Approach
+
+The dashboard was designed to present complex data in a clear and accessible format for business users. Key performance indicators are displayed prominently, while interactive visualizations allow users to move from a high-level overview to more detailed performance analysis.
+
+The combination of dynamic KPIs, trends, rankings, and geographic analysis helps users quickly identify performance changes and areas that require further attention.
