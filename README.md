@@ -37,11 +37,17 @@ The project follows the Google Data Analytics process:
 
 ---
 
+## 🔄 Data Analytics Workflow
+
+Ask → Prepare → Process → Analyze → Share → Act
+
+---
+
 ## 📂 Dataset
 
-- Source: Kaggle
-- Records: (Lo llenaremos después)
-- Columns: (Lo llenaremos después)
+- Source: [Kaggle – SuperStore Sales Analytics](https://www.kaggle.com/datasets/thuandao/superstore-sales-analytics)
+- Records: 51,290
+- Columns: 21
 
 ---
 
@@ -52,6 +58,7 @@ Dataset/
 Dashboard/
 Docs/
 Images/
+SQL/
 
 README.md
 01_Ask.md
@@ -77,16 +84,47 @@ README.md
 
 ## 📊 Dashboard Preview
 
-TBD
+
+<p align="center">
+    <img src="Images/analyze/dashboard_analyze.gif"
+         alt="Executive Overview Dashboard"
+         width="700"
+     height="600">
+</p>
+</p>
+
+<p align="center">
+<i>gif 1. Dashboard - Executive Overview slide. </i>
+</p>
+
+<p align="center">
+    <img src="Images/analyze/dashboard_insight.gif"
+         alt="Executive Overview Dashboard"
+         width="700"
+     height="600">
+</p>
+</p>
+
+<p align="center">
+<i>gif 2. Dashboard - Business Insights slide. </i>
+</p>
 
 ---
 
 ## 💡 Key Insights
 
-TBD
+
+- Sales and profit showed an overall positive trend across the analyzed period.
+- Technology was the strongest contributor to overall profit.
+- High discount levels were generally associated with lower profitability.
+- Market and regional performance varied considerably across the business.
+- A small group of products and regions accounted for a significant share of overall performance.
 
 ---
 
 ## 🚀 Business Recommendations
 
-TBD
+- Review discount strategies to protect profit margins.
+- Prioritize high-performing markets and profitable product categories.
+- Investigate underperforming regions and potential causes of weak profitability.
+- Continuously monitor KPIs to support data-driven decision-making.
