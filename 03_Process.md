@@ -1,6 +1,6 @@
 # ⚙️ Process
 
-## Objective
+## 🎯 Objective
 
 The objective of this phase was to transform the prepared dataset into a structured Data Warehouse optimized for Business Intelligence and reporting.
 
@@ -8,7 +8,7 @@ Using SQL Server, the raw data was processed through an ETL workflow, organized 
 
 ---
 
-## Preprocessing
+## 🧹 Preprocessing
 
 Before importing the dataset into SQL Server, a light preprocessing step was performed to improve data consistency while preserving the original dataset.
 
@@ -40,7 +40,7 @@ This preprocessing ensured that the dataset was clean, consistent, and ready for
 
 ---
 
-## SQL Server Environment
+## 🖥️ SQL Server Environment
 
 Microsoft SQL Server was selected as the database management system for implementing the Data Warehouse due to its reliability, scalability, and strong integration with Business Intelligence tools.
 
@@ -59,7 +59,7 @@ SQL Server Management Studio (SSMS) was used to design the database, execute SQL
 
 ---
 
-## Database Creation
+## 🗄️ Database Creation
 
 A dedicated database named `RetailDW` was created to store and manage the Data Warehouse objects.
 
@@ -80,7 +80,7 @@ This database serves as the foundation for all subsequent components, including 
 
 ---
 
-## Schema Design
+## 🧩 Schema Design
 
 To improve organization and maintainability, the database was divided into separate schemas based on the role of each object within the Data Warehouse architecture.
 
@@ -122,7 +122,7 @@ GO
 
 ---
 
-## Staging Layer
+## 📥 Staging Layer
 
 A staging layer was implemented to serve as the initial landing area for the raw data imported from the CSV file.
 
@@ -171,7 +171,7 @@ CREATE TABLE stg.SuperStore (
 
 ---
 
-## ETL Process
+## 🔄 ETL Process
 
 The ETL (Extract, Transform, Load) process was implemented to transfer data from the staging layer into the dimensional model.
 
@@ -223,7 +223,7 @@ FROM stg.SuperStore;
 
 ---
 
-## Star Schema Design
+## ⭐ Star Schema Design
 
 A Star Schema was selected as the dimensional model for this project because it provides a simple, efficient, and scalable structure for Business Intelligence workloads.
 
@@ -265,7 +265,7 @@ These dimensions are linked to the central `fact.FactSales` table through surrog
 
 ---
 
-## Dimension Tables
+## 📐 Dimension Tables
 
 Dimension tables store descriptive business information that provides context for the numerical values contained in the fact table. Instead of storing repetitive descriptive data with every transaction, the Data Warehouse separates this information into dedicated dimensions, reducing redundancy and improving query performance.
 
@@ -304,7 +304,7 @@ The project includes four dimension tables:
 
 ---
 
-## Fact Table
+## 🗂️ Fact Table
 
 The fact table serves as the central component of the Star Schema, storing the measurable business events that are analyzed throughout the reporting process.
 
@@ -344,7 +344,7 @@ The table contains both foreign keys and quantitative measures that support anal
 
 ---
 
-## Data Validation
+## 📊 Data Validation
 
 After loading the dimensional model, a series of validation checks were performed to verify the accuracy and consistency of the Data Warehouse.
 
@@ -383,7 +383,7 @@ The following validations were performed:
 
 ---
 
-## Performance Optimization (Indexes)
+## ⚡ Performance Optimization (Indexes)
 
 To improve query performance and support efficient analytical workloads, indexes were created on the Data Warehouse tables after the data loading process.
 
