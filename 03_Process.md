@@ -1,3 +1,5 @@
+# ⚙️ Process
+
 ## Objective
 
 The objective of this phase was to transform the prepared dataset into a structured Data Warehouse optimized for Business Intelligence and reporting.

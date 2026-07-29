@@ -1,3 +1,5 @@
+# 📊 Analyze
+
 ## 🎯 Objective
 
 The objective of this phase was to analyze the prepared dataset and transform it into meaningful business insights. Using SQL Server for data validation and Power BI for interactive analysis, the data was explored to identify sales trends, profitability patterns, customer behavior, and opportunities for business improvement.
