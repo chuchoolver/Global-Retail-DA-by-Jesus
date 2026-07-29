@@ -56,7 +56,6 @@ Ask → Prepare → Process → Analyze → Share → Act
 ```text
 Dataset/
 Dashboard/
-Docs/
 Images/
 SQL/
 
@@ -91,7 +90,6 @@ README.md
          width="700"
      height="600">
 </p>
-</p>
 
 <p align="center">
 <i>gif 1. Dashboard - Executive Overview slide. </i>
@@ -102,7 +100,6 @@ README.md
          alt="Executive Overview Dashboard"
          width="700"
      height="600">
-</p>
 </p>
 
 <p align="center">
@@ -118,7 +115,7 @@ README.md
 - Technology was the strongest contributor to overall profit.
 - High discount levels were generally associated with lower profitability.
 - Market and regional performance varied considerably across the business.
-- A small group of products and regions accounted for a significant share of overall performance.
+- Product and regional performance varied considerably across the business.
 
 ---
 

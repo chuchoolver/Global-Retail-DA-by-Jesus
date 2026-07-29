@@ -61,10 +61,9 @@ The dashboard includes:
          width="700"
      height="600">
 </p>
-</p>
 
 <p align="center">
-<i>gif 1. Dashboard - Executive Overview slide. </i>
+<i>Figure 1. Executive Overview Dashboard.</i>
 </p>
 
 <p align="center">
@@ -73,10 +72,9 @@ The dashboard includes:
          width="700"
      height="600">
 </p>
-</p>
 
 <p align="center">
-<i>gif 2. Dashboard - Business Insights slide. </i>
+<i>Figure 2. Business Insights Dashboard.</i>
 </p>
 
 ---
@@ -115,10 +113,9 @@ The analysis revealed several relevant patterns across sales, profitability, mar
          width="500"
      height="400">
 </p>
-</p>
 
 <p align="center">
-<i>Image 1. Dashboard - Impact of Discounts on Profit (2014). </i>
+<i>Figure 3. Impact of Discounts on Profit (2014).</i>
 </p>
 
 ---

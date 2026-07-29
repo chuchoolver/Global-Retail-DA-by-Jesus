@@ -27,10 +27,9 @@ Key design elements include:
          width="700"
      height="600">
 </p>
-</p>
 
 <p align="center">
-<i>gif 1. Dashboard - Executive Overview slide. </i>
+<i>Figure 1. Executive Overview Dashboard.</i>
 </p>
 
 <p align="center">
@@ -39,10 +38,9 @@ Key design elements include:
          width="700"
      height="600">
 </p>
-</p>
 
 <p align="center">
-<i>gif 2. Dashboard - Business Insights slide. </i>
+<i>Figure 2. Business Insights Dashboard.</i>
 </p>
 
 ---
@@ -64,10 +62,9 @@ The dashboard combines several visualizations to communicate the most relevant b
          width="500"
      height="400">
 </p>
-</p>
 
 <p align="center">
-<i>Image 1. Dashboard - Business Insights slide. </i>
+<i>Figure 3. Business Insights slide.</i>
 </p>
 
 ---
