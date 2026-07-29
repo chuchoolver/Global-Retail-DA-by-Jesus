@@ -108,7 +108,7 @@ The analysis revealed several relevant patterns across sales, profitability, mar
 - The analysis identified high-discount transactions that may require closer attention.
 
 <p align="center">
-    <img src="Images/analyze/discount_impact.gif"
+    <img src="Images/analyze/discount_impact.png"
          alt="Executive Overview Dashboard"
          width="700"
      height="600">
