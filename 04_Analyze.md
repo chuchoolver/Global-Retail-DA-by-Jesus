@@ -110,8 +110,8 @@ The analysis revealed several relevant patterns across sales, profitability, mar
 <p align="center">
     <img src="Images/analyze/discount_impact.png"
          alt="Executive Overview Dashboard"
-         width="700"
-     height="600">
+         width="500"
+     height="400">
 </p>
 </p>
 
