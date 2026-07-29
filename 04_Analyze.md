@@ -76,3 +76,45 @@ The dashboard includes:
 <p align="center">
 <i>gif 2. Dashboard - Business Insights slide. </i>
 </p>
+
+---
+
+## 🔎 Key Findings
+
+The analysis revealed several relevant patterns across sales, profitability, markets, products, and discounts.
+
+### Sales & Profitability
+
+- Total sales reached approximately **$6.03M** across the analyzed period.
+- Profit reached approximately **$504K** in 2014.
+- Overall profit margin was approximately **11.72%** in 2014.
+- Sales increased compared with the previous year, while profitability also showed positive growth.
+
+### Market Performance
+
+- **APAC** was the strongest market by sales in 2014.
+- The United States remained one of the largest contributors to total sales.
+- Several regions showed significantly lower sales and were identified as areas requiring attention.
+
+### Product & Category Performance
+
+- Technology generated the highest share of total profit.
+- A small group of products accounted for a significant portion of sales.
+- Product performance varied considerably across categories.
+
+### Discount Impact
+
+- Higher discount levels were generally associated with lower profitability.
+- The analysis identified high-discount transactions that may require closer attention.
+
+<p align="center">
+    <img src="Images/analyze/discount_impact.gif"
+         alt="Executive Overview Dashboard"
+         width="700"
+     height="600">
+</p>
+</p>
+
+<p align="center">
+<i>Image 1. Dashboard - Impact of Discounts on Profit (2014). </i>
+</p>
