@@ -25,3 +25,14 @@ Technology was the strongest contributor to overall profit. Maintaining strong p
 ### 4. Monitor Underperforming Regions
 
 Regions with high sales but comparatively low profitability should be investigated further to identify potential issues related to discounts, product mix, or operating costs.
+
+---
+
+## 📈 Expected Impact
+
+Implementing these recommendations could help the business:
+
+- Improve overall profit margins by optimizing discount strategies.
+- Focus growth efforts on high-performing markets and product categories.
+- Identify underperforming regions and investigate potential causes.
+- Support more data-driven decisions through continuous KPI monitoring.
