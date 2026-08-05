@@ -1,12 +1,12 @@
-# 🚀 Act
+# Act
 
-## 🎯 Objective
+## Objective
 
 The objective of this phase was to translate the analysis findings into actionable business recommendations that can support better decision-making and improve sales and profitability.
 
 --- 
 
-## 💡 Business Recommendations
+## Business Recommendations
 
 Based on the findings identified during the analysis, the following actions could help improve business performance:
 
@@ -28,7 +28,7 @@ Regions with high sales but comparatively low profitability should be investigat
 
 ---
 
-## 📈 Expected Impact
+## Expected Impact
 
 Implementing these recommendations could help the business:
 
