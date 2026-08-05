@@ -1,12 +1,12 @@
-# 📢 Share
+# Share
 
-## 🎯 Objective
+## Objective
 
 The objective of this phase was to communicate the key findings through an interactive Power BI dashboard designed for clear and efficient business decision-making.
 
 ---
 
-## 🎨 Dashboard Design
+## Dashboard Design
 
 The dashboard was designed to provide an executive-level overview while allowing users to explore sales, profitability, market, product, and regional performance.
 
@@ -45,7 +45,7 @@ Key design elements include:
 
 ---
 
-## 📊 Key Visualizations
+## Key Visualizations
 
 The dashboard combines several visualizations to communicate the most relevant business metrics and performance patterns.
 
@@ -69,7 +69,7 @@ The dashboard combines several visualizations to communicate the most relevant b
 
 ---
 
-## 🖱️ Interactive Features
+## Interactive Features
 
 The dashboard was designed to allow users to explore the data dynamically and compare performance across different periods and business dimensions.
 
@@ -83,7 +83,7 @@ Key interactive features include:
 
 ---
 
-## 💬 Communication Approach
+## Communication Approach
 
 The dashboard was designed to present complex data in a clear and accessible format for business users. Key performance indicators are displayed prominently, while interactive visualizations allow users to move from a high-level overview to more detailed performance analysis.
 
