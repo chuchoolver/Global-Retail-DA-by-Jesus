@@ -1,12 +1,12 @@
-# 📊 Analyze
+# Analyze
 
-## 🎯 Objective
+## Objective
 
 The objective of this phase was to analyze the prepared dataset and transform it into meaningful business insights. Using SQL Server for data validation and Power BI for interactive analysis, the data was explored to identify sales trends, profitability patterns, customer behavior, and opportunities for business improvement.
 
 ---
 
-## ❓ Business Questions
+## Business Questions
 
 The analysis was conducted to answer a set of key business questions that support strategic decision-making. These questions guided both the SQL analysis and the development of the Power BI dashboard.
 
@@ -21,7 +21,7 @@ The analysis was conducted to answer a set of key business questions that suppor
 
 ---
 
-## 📈 Analysis Process
+## Analysis Process
 
 The analysis was performed in two stages. SQL Server was used to validate and explore the data, while Power BI was used to build interactive visualizations and business metrics.
 
@@ -79,7 +79,7 @@ The dashboard includes:
 
 ---
 
-## 🔎 Key Findings
+## Key Findings
 
 The analysis revealed several relevant patterns across sales, profitability, markets, products, and discounts.
 
@@ -120,7 +120,7 @@ The analysis revealed several relevant patterns across sales, profitability, mar
 
 ---
 
-## 💡 Business Insights
+## Business Insights
 
 The analysis highlights three main areas that could influence business performance:
 
@@ -138,7 +138,7 @@ Technology was the strongest contributor to total profit, highlighting the impor
 
 ---
 
-## 🎯 Outcome
+## Outcome
 
 The analysis transformed the prepared data into measurable business insights and provided the foundation for the final Power BI dashboard.
 
