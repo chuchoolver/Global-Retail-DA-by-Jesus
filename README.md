@@ -1,6 +1,6 @@
-# 🌍 Global Retail Analytics Dashboard
+# Global Retail Analytics Dashboard
 
-## 📌 Project Overview
+## Project Overview
 
 This project simulates a real-world Business Intelligence engagement for a global retail company. The objective is to transform raw sales data into actionable business insights using SQL Server, Power Query, DAX, and Power BI.
 
@@ -15,7 +15,7 @@ The project follows the Google Data Analytics process:
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Analyze global retail sales performance.
 - Identify sales and profit trends.
@@ -25,7 +25,7 @@ The project follows the Google Data Analytics process:
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 - SQL Server
 - SQL
@@ -37,13 +37,13 @@ The project follows the Google Data Analytics process:
 
 ---
 
-## 🔄 Data Analytics Workflow
+## Data Analytics Workflow
 
 Ask → Prepare → Process → Analyze → Share → Act
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - Source: [Kaggle – SuperStore Sales Analytics](https://www.kaggle.com/datasets/thuandao/superstore-sales-analytics)
 - Records: 51,290
@@ -51,7 +51,7 @@ Ask → Prepare → Process → Analyze → Share → Act
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Dataset/
@@ -70,7 +70,7 @@ README.md
 
 ---
 
-## 📖 Documentation
+## Documentation
 
 - [01 - Ask](01_Ask.md)
 - [02 - Prepare](02_Prepare.md)
@@ -81,7 +81,7 @@ README.md
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 
 <p align="center">
@@ -108,7 +108,7 @@ README.md
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 
 - Sales and profit showed an overall positive trend across the analyzed period.
@@ -119,7 +119,7 @@ README.md
 
 ---
 
-## 🚀 Business Recommendations
+## Business Recommendations
 
 - Review discount strategies to protect profit margins.
 - Prioritize high-performing markets and profitable product categories.
