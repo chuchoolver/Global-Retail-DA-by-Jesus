@@ -87,11 +87,11 @@ Before starting the ETL process, the following observations were identified:
 
 At the end of this phase:
 
-- ✔ Dataset source validated.
-- ✔ Dataset structure analyzed.
-- ✔ Business entities identified.
-- ✔ Data suitable for dimensional modeling.
-- ✔ Ready to begin the **Process** phase.
+- Dataset source validated.
+- Dataset structure analyzed.
+- Business entities identified.
+- Data suitable for dimensional modeling.
+- Ready to begin the **Process** phase.
 
 ---
 
