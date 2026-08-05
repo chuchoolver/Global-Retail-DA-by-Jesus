@@ -1,7 +1,7 @@
 
-# ❓ Ask
+# Ask
 
-## 💼 Business Problem
+## Business Problem
 
 The company generates thousands of sales transactions across different markets, product categories, and customer segments. However, decision-makers lack a centralized and interactive solution to monitor business performance, identify profitable areas, detect underperforming products, and evaluate customer and regional trends.
 
@@ -9,7 +9,7 @@ Without clear visibility into these metrics, it becomes difficult to make inform
 
 ---
 
-## 🎯 Business Objectives
+## Business Objectives
 
 - Monitor overall sales and profitability performance.
 - Identify the best and worst performing products and categories.
@@ -21,7 +21,7 @@ Without clear visibility into these metrics, it becomes difficult to make inform
 
 ---
 
-## 👥 Stakeholders
+## Stakeholders
 
 | Stakeholder | Business Need |
 |--------------|---------------|
@@ -33,7 +33,7 @@ Without clear visibility into these metrics, it becomes difficult to make inform
 
 ---
 
-## ❓ Business Questions
+## Business Questions
 
 1. How are sales and profit evolving over time?
 2. Which markets generate the highest revenue?
@@ -48,7 +48,7 @@ Without clear visibility into these metrics, it becomes difficult to make inform
 
 ---
 
-## ✅ Success Criteria
+## Success Criteria
 
 The project will be considered successful if:
 
@@ -60,7 +60,7 @@ The project will be considered successful if:
 
 ---
 
-## 📌 Project Scope
+## Project Scope
 
 ### In Scope
 
