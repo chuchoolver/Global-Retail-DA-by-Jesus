@@ -1,6 +1,6 @@
-# ⚙️ Process
+# Process
 
-## 🎯 Objective
+## Objective
 
 The objective of this phase was to transform the prepared dataset into a structured Data Warehouse optimized for Business Intelligence and reporting.
 
@@ -8,7 +8,7 @@ Using SQL Server, the raw data was processed through an ETL workflow, organized 
 
 ---
 
-## 🧹 Preprocessing
+## Preprocessing
 
 Before importing the dataset into SQL Server, a light preprocessing step was performed to improve data consistency while preserving the original dataset.
 
@@ -40,7 +40,7 @@ This preprocessing ensured that the dataset was clean, consistent, and ready for
 
 ---
 
-## 🖥️ SQL Server Environment
+## SQL Server Environment
 
 Microsoft SQL Server was selected as the database management system for implementing the Data Warehouse due to its reliability, scalability, and strong integration with Business Intelligence tools.
 
@@ -59,7 +59,7 @@ SQL Server Management Studio (SSMS) was used to design the database, execute SQL
 
 ---
 
-## 🗄️ Database Creation
+## Database Creation
 
 A dedicated database named `RetailDW` was created to store and manage the Data Warehouse objects.
 
@@ -80,7 +80,7 @@ This database serves as the foundation for all subsequent components, including 
 
 ---
 
-## 🧩 Schema Design
+## Schema Design
 
 To improve organization and maintainability, the database was divided into separate schemas based on the role of each object within the Data Warehouse architecture.
 
@@ -114,7 +114,7 @@ GO
 <i>Figure 5. Database schemas used to organize the Data Warehouse objects.</i>
 </p>
 
-> **💡 Design Insight**
+> ** Design Insight**
 >
 > **Why use separate schemas instead of storing all tables under `dbo`?**
 >
@@ -122,7 +122,7 @@ GO
 
 ---
 
-## 📥 Staging Layer
+## Staging Layer
 
 A staging layer was implemented to serve as the initial landing area for the raw data imported from the CSV file.
 
@@ -155,13 +155,13 @@ CREATE TABLE stg.SuperStore (
 <i>Figure 6. Staging table containing the raw data imported from the source CSV file.</i>
 </p>
 
-> **💡 Design Insight**
+> ** Design Insight**
 >
 > **Why use a staging layer instead of loading data directly into the dimension and fact tables?**
 >
 > A staging layer isolates the raw source data from the analytical model, making the ETL process safer and easier to manage. It allows data quality checks, transformations, and validation to be performed before loading the final tables, reducing the risk of introducing inconsistent or incomplete data into the Data Warehouse.
 
-### 📌 Key Takeaways
+### Key Takeaways
 
 - The staging layer is the first destination for the raw source data.
 - It preserves the original dataset before any transformation is applied.
@@ -171,7 +171,7 @@ CREATE TABLE stg.SuperStore (
 
 ---
 
-## 🔄 ETL Process
+## ETL Process
 
 The ETL (Extract, Transform, Load) process was implemented to transfer data from the staging layer into the dimensional model.
 
@@ -207,13 +207,13 @@ FROM stg.SuperStore;
 <i>Figure 7. ETL workflow from the source dataset to the Star Schema.</i>
 </p>
 
-> **💡 Design Insight**
+> ** Design Insight**
 >
 > **Why separate the ETL process into Extract, Transform, and Load phases?**
 >
 > Dividing the workflow into distinct phases makes the data pipeline easier to maintain, troubleshoot, and scale. It also allows each stage to focus on a specific responsibility: extracting raw data, transforming it into a business-friendly format, and loading it into the analytical model while preserving data integrity.
 
-### 📌 Key Takeaways
+### Key Takeaways
 
 - Data was extracted from the source CSV into the staging layer.
 - Data cleansing and business transformations were applied before loading.
@@ -223,7 +223,7 @@ FROM stg.SuperStore;
 
 ---
 
-## ⭐ Star Schema Design
+## Star Schema Design
 
 A Star Schema was selected as the dimensional model for this project because it provides a simple, efficient, and scalable structure for Business Intelligence workloads.
 
@@ -249,13 +249,13 @@ These dimensions are linked to the central `fact.FactSales` table through surrog
 <i>Figure 8. Star Schema implemented for the Retail Data Warehouse.</i>
 </p>
 
-> **💡 Design Insight**
+> ** Design Insight**
 >
 > **Why choose a Star Schema instead of a fully normalized database?**
 >
 > Star Schemas are specifically designed for analytical workloads rather than transactional systems. By denormalizing descriptive attributes into dimension tables, analytical queries require fewer joins, execute faster, and are easier to understand. This structure is widely adopted in modern Business Intelligence and Data Warehouse solutions because it balances performance, simplicity, and scalability.
 
-### 📌 Key Takeaways
+### Key Takeaways
 
 - The Star Schema separates measurable data from descriptive data.
 - `fact.FactSales` is the central table containing business metrics.
@@ -291,11 +291,11 @@ The project includes four dimension tables:
 <i>Figure 9. Dimension tables implemented in the Retail Data Warehouse.</i>
 </p>
 
-> **💡 Design Insight**
+> ** Design Insight**
 >
 > Dimension tables provide the descriptive context required for business analysis. By isolating attributes such as customers, products, locations, and shipping methods from transactional records, the model becomes easier to maintain, reduces data duplication, and enables flexible slicing and filtering in analytical reports.
 
-### 📌 Key Takeaways
+### Key Takeaways
 
 - Dimension tables contain descriptive business attributes.
 - Each dimension is uniquely identified by a surrogate key.
@@ -304,7 +304,7 @@ The project includes four dimension tables:
 
 ---
 
-## 🗂️ Fact Table
+## Fact Table
 
 The fact table serves as the central component of the Star Schema, storing the measurable business events that are analyzed throughout the reporting process.
 
@@ -330,11 +330,11 @@ The table contains both foreign keys and quantitative measures that support anal
 <i>Figure 10. Structure of the FactSales table.</i>
 </p>
 
-> **💡 Design Insight**
+> ** Design Insight**
 >
 > Unlike dimension tables, which describe business entities, the fact table stores measurable business metrics. Keeping numerical values centralized allows analytical tools such as Power BI to efficiently aggregate data while leveraging the descriptive context provided by dimension tables.
 
-### 📌 Key Takeaways
+### Key Takeaways
 
 - The fact table is the center of the Star Schema.
 - Each record represents a business transaction.
@@ -344,7 +344,7 @@ The table contains both foreign keys and quantitative measures that support anal
 
 ---
 
-## 📊 Data Validation
+## Data Validation
 
 After loading the dimensional model, a series of validation checks were performed to verify the accuracy and consistency of the Data Warehouse.
 
@@ -369,11 +369,11 @@ The following validations were performed:
 <i>Figure 11. Data validation performed after the ETL process.</i>
 </p>
 
-> **💡 Design Insight**
+> ** Design Insight**
 >
 > Data validation is a critical step in every ETL pipeline. Verifying data quality before building dashboards ensures that business decisions are based on reliable information. Even a well-designed dimensional model can produce misleading insights if the loaded data is incomplete or inconsistent.
 
-### 📌 Key Takeaways
+### Key Takeaways
 
 - Data consistency was verified after the ETL process.
 - Record counts were compared between staging and destination tables.
@@ -383,7 +383,7 @@ The following validations were performed:
 
 ---
 
-## ⚡ Performance Optimization (Indexes)
+## Performance Optimization (Indexes)
 
 To improve query performance and support efficient analytical workloads, indexes were created on the Data Warehouse tables after the data loading process.
 
@@ -407,11 +407,11 @@ The implemented indexing strategy includes:
 <i>Figure 12. Indexing strategy implemented to optimize analytical query performance.</i>
 </p>
 
-> **💡 Design Insight**
+> **Design Insight**
 >
 > Data Warehouses are primarily optimized for read operations rather than transactional workloads. Creating indexes on the columns most frequently used in joins and filtering significantly reduces query execution time, improving dashboard responsiveness and the overall analytical experience.
 
-### 📌 Key Takeaways
+### Key Takeaways
 
 - Clustered indexes were created automatically through primary keys.
 - Nonclustered indexes optimize joins between fact and dimension tables.
