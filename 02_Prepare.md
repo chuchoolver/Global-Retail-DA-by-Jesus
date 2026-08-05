@@ -1,12 +1,12 @@
-# 📦 Prepare
+# Prepare
 
-## 🎯 Objective
+## Objective
 
 The purpose of this phase is to evaluate the dataset before starting the ETL process. This includes understanding its structure, validating its source, identifying its main characteristics, and ensuring that the data is suitable for building a Business Intelligence solution.
 
 ---
 
-## 📂 Dataset Source
+## Dataset Source
 
 The dataset used in this project is the **SuperStore Sales Analytics Dataset**, publicly available on **Kaggle**. It contains transactional sales data from a fictional retail company and is widely used for learning and demonstrating Business Intelligence, Data Analytics, and Data Visualization concepts.
 
@@ -18,7 +18,7 @@ The dataset used in this project is the **SuperStore Sales Analytics Dataset**, 
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 Before starting the ETL process, the dataset was analyzed to understand its structure and determine whether it was suitable for building a Business Intelligence solution.
 
@@ -35,7 +35,7 @@ Before starting the ETL process, the dataset was analyzed to understand its stru
 
 ---
 
-## 🧩 Dataset Structure
+## Dataset Structure
 
 The dataset contains transactional information that can be grouped into the following business areas:
 
@@ -50,7 +50,7 @@ The dataset contains transactional information that can be grouped into the foll
 
 ---
 
-## 👀 Dataset Preview
+## Dataset Preview
 
 The following image shows a sample of the original dataset before any transformation.
 
@@ -60,7 +60,7 @@ The following image shows a sample of the original dataset before any transforma
 
 ---
 
-## 🔎 Data Credibility
+## Data Credibility
 
 The dataset was obtained from Kaggle, one of the most recognized platforms for data science and analytics projects.
 
@@ -70,7 +70,7 @@ For these reasons, the dataset was considered suitable for this project.
 
 ---
 
-## 📌 Initial Observations
+## Initial Observations
 
 Before starting the ETL process, the following observations were identified:
 
@@ -83,7 +83,7 @@ Before starting the ETL process, the following observations were identified:
 
 ---
 
-## 📦 Deliverables
+## Deliverables
 
 At the end of this phase:
 
@@ -95,7 +95,7 @@ At the end of this phase:
 
 ---
 
-## ➡️ Next Step
+## Next Step
 
 **Process**
 
